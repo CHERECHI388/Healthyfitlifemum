@@ -1,0 +1,238 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #000000; /* Black for text */
+  background-color: #f9f9f9; /* Light background */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #595265; /* Muted purple for navbar */
+  padding: 20px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #ffffff; /* White for navbar links */
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #2f2d42; /* Dark Purple for hover effect */
+}
+
+/* Hero Section */
+#hero {
+  background: url('path/to/hero image.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; /* White for hero text */
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #b38180; /* Soft pink for CTA button */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #2f2d42; /* Dark purple hover */
+}
+
+/* About Section */
+#about {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background */
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #595265; /* Muted purple for headings */
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #70687b; /* Gray for secondary text */
+}
+#about-image {
+  width: 20%; /* Adjust percentage as needed */
+  height: 9px; /* Maintain aspect ratio */
+  float: left; /* Keep image aligned to the left */
+  margin-right: 20px; /* Add space between image and text */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  #about-image {
+    width: 100%; /* Make the image full-width on smaller screens */
+    margin: 0 0 20px; /* Adjust margins for mobile layout */
+  }
+}
+
+/* Programs Section */
+#programs {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.programs-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.program-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+  color: #000000; /* Black text */
+}
+
+.program-item h3 {
+  color: #595265; /* Muted purple for program titles */
+}
+
+.program-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 50px 0;
+  background-color: #70687b; /* Gray background */
+  color: #ffffff; /* White text */
+  text-align: center;
+}
+
+.testimonial-item {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Contact Us Section */
+#contact {
+  padding: 50px 0;
+  text-align: center;
+}
+/* Contact Section Image */
+.contact-image {
+  float: right;
+  width: 30%;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+  padding: 15px;
+  border: 1px solid #70687b; /* Gray border for inputs */
+  border-radius: 5px;
+  width: 100%;
+  color: #000000; /* Black text */
+}
+
+#contact button {
+  background-color: #b38180; /* Soft pink for button */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #2f2d42; /* Dark purple hover */
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #2f2d42; /* Dark purple for footer */
+  color: #ffffff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .programs-grid {
+    flex-direction: column;
+  }
+
+  .program-item {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+}
